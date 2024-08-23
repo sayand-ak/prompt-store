@@ -1,3 +1,4 @@
+import Help from "@components/Help";
 import Navbar from "@components/Navbar";
 import Provider from "@components/Provider";
 import "@styles/globals.css";
@@ -24,6 +25,10 @@ const RootLayout = ({ children }) => {
                         <Navbar />
                         {children}
                     </main>
+
+                    <div className="fixed bottom-10 right-10 bg-[#F5F5F5] shadow-xl rounded-full p-2">
+                        <Help/>
+                    </div>
                 </Provider>
             </body>
         </html>
