@@ -2,6 +2,8 @@ import Prompt from "@model/prompt";
 import { connectDB } from "@utils/database"
 
 export const GET = async (req) => {
+
+    console.log("Current backend URL:", req.url);
     try {
         await connectDB();
         
